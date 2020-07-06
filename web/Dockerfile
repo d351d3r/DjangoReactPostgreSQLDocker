@@ -22,3 +22,6 @@ COPY . .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 RUN npm install frontend/
+
+# run entrypoint.sh
+ENTRYPOINT ["/usr/src/web/entrypoint.sh"]

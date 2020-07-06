@@ -16,6 +16,8 @@ services:
     env_file:
       - ./.env.dev
     stdin_open: true
+    depends_on:
+      - db
   
   db:
     container_name: db
